@@ -26,7 +26,7 @@ public class Vigenere_BeaufortAlgo {
      */
     public static void chooseOptions() {
         System.out.println("\n");
-        System.out.println("-------- Vigenere shiferim (enkondim dhe dekodim)  --------\n");
+        System.out.println("-------- Vigenere/beaufort shiferim (enkondim dhe dekodim)  --------\n");
         Scanner in = new Scanner(System.in);
         String input = "0";
 
@@ -163,7 +163,7 @@ public class Vigenere_BeaufortAlgo {
         System.out.println("Filloj dekriptimi");
         System.out.print("Shkruaj celsin ne  UPPER Case: ");
         String key = in.nextLine();
-        System.out.print("Shkruani mesazhin e dekriptuar nga Vigenere cipher:  ");
+        System.out.print("Shkruani mesazhin e dekriptuar nga Vigenere/beaufort cipher:  ");
         String DMessage = in.nextLine();
         decrypt(DMessage, key);
     }
@@ -176,7 +176,7 @@ public class Vigenere_BeaufortAlgo {
         System.out.println("Filloj enkriptimi");
         System.out.print("Shkruaj celsin ne UPPER Case: ");
         String key = in.nextLine();
-        System.out.print("Shkruani mesazhin e enkriptuar nga Vigenere cipher: ");
+        System.out.print("Shkruani mesazhin e enkriptuar nga Vigenere/beaufort cipher: ");
         String EMessage = in.nextLine();
         encrypt(EMessage, key);
     }
